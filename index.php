@@ -50,13 +50,13 @@
         </div>
 
         <ul class="list-unstyled components">
-            <li>
+            <li class="active">
                 <a href="./index">Startseite</a>
             </li>
             <li>
                 <a href="./company_selector">Tippen/Spenden</a>
             </li>
-            <li class="active">
+            <li>
                 <a href="./register">Lokal registrieren</a>
             </li>
             <li>

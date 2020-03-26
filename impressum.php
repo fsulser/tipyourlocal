@@ -56,7 +56,7 @@
             <li>
                 <a href="./company_selector">Tippen/Spenden</a>
             </li>
-            <li class="active">
+            <li>
                 <a href="./register">Lokal registrieren</a>
             </li>
             <li>
@@ -65,7 +65,7 @@
         </ul>
 
         <ul id="impressum" class="list-unstyled components">
-            <li>
+            <li class="active">
                 <a href="./impressum">Impressum</a>
             </li>
         </ul>

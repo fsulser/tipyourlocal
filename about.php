@@ -57,10 +57,10 @@
             <li>
                 <a href="./company_selector">Tippen/Spenden</a>
             </li>
-            <li class="active">
+            <li>
                 <a href="./register">Lokal registrieren</a>
             </li>
-            <li>
+            <li class="active">
                 <a href="./about">Über</a>
             </li>
         </ul>

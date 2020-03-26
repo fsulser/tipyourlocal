@@ -11,7 +11,7 @@ $(document).ready(function () {
         const queryString = window.location.search;
         params = getParams(queryString)
 
-        location.href = "./pay.php?id=" + params.id + "&amount=" + value;
+        location.href = "./pay?id=" + params.id + "&amount=" + value;
 
     });
 

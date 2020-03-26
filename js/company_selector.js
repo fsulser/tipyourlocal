@@ -29,7 +29,7 @@ $(document).ready(function() {
 
     $('#example tbody').on( 'click', 'tr', function () {
         data = table.row( this ).data();
-        location.href = "./menu.php?id="+data.id;
+        location.href = "./menu?id="+data.id;
     } );
 
 } );
