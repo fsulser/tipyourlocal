@@ -15,7 +15,10 @@
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 
-    <link rel="stylesheet" href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css">
+
+    
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/register.css">
@@ -33,20 +36,27 @@
     <!-- jQuery Custom Scroller CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+
+    
 
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="js/company_selector.js"></script>
 
     <style>
         .dataTables_filter {
-            float: left !important;
+            float: right !important;
         }
         .dataTables_length{
-            float: right !important;
+            float: left !important;
         }
 
         tr{
             cursor: pointer;
+        }
+
+        table.table-bordered.dataTable tbody th, table.table-bordered.dataTable tbody td {
+            word-break: break-all;
         }
     </style>
 
@@ -93,16 +103,16 @@
 
     <div class="overlay"></div>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-auto">
-                    <button class="btn btn_menu" id="sidebarCollapse">
-                        <i class="fa fa-bars"></i>
-                        Menu
-                    </button>
-                </div>
-            </div>
+    <nav class="navbar navbar-light bg-light">
+        <div class="navbar-nav ">
+            
+        <button class="btn btn_menu" id="sidebarCollapse">
+            <i class="fa fa-bars"></i>
+            Menu
+        </button></div>
+
+        <div class="navbar-nav col">
+            <a class="navbar-brand" href="./index">TIP YOUR LOCAL</a>
         </div>
     </nav>
 
@@ -115,7 +125,7 @@
             </h1>
             <div style="height: 30px"></div>
 
-            <table id="example" class="display" style="width:100%">
+            <table id="example" class="table table-hover table-bordered" style="width:100%">
                 <thead>
                 <tr>
                     <th>ID</th>

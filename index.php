@@ -74,16 +74,16 @@
 
     <div class="overlay"></div>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-auto">
-                    <button class="btn btn_menu" id="sidebarCollapse">
-                        <i class="fa fa-bars"></i>
-                        Menu
-                    </button>
-                </div>
-            </div>
+    <nav class="navbar navbar-light bg-light">
+        <div class="navbar-nav ">
+            
+        <button class="btn btn_menu" id="sidebarCollapse">
+            <i class="fa fa-bars"></i>
+            Menu
+        </button></div>
+
+        <div class="navbar-nav col">
+            <a class="navbar-brand" href="./index">TIP YOUR LOCAL</a>
         </div>
     </nav>
 
@@ -98,7 +98,7 @@
             <div style="height: 50px"></div>
 
             <div class="col-sm">
-                <img src="img/main_header.jpg" class="img-fluid">
+                <img src="img/schwarze.jpg" class="img-fluid col-9">
 
                 <div style="height: 50px"></div>
 
@@ -122,7 +122,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm">
-                        <img src="img/main_menucard.png" class="small_image img-fluid">
+                        <img src="img/main_menucard.jpg" class="small_image img-fluid">
                         <div style="height: 20px"></div>
                         <h2>Menükarte</h2>
                         <p>Du willst einem Lokal etwas gutes tun? Hier kannst Du direkt dein Lokal auswählen und die gewünschte Summe an das Lokal spenden.</p>
@@ -131,7 +131,7 @@
                         <div style="height: 100px"></div>
                     </div>
                     <div class="col-sm">
-                        <img src="img/main_companies.png" class="small_image img-fluid">
+                        <img src="img/main_companies.jpg" class="small_image img-fluid">
                         <div style="height: 20px"></div>
                         <h2>Lokal</h2>
                         <p>Du besitzt ein Lokal und möchtest Spenden erhalten? Registriere Dich hier, damit Du für deine Kunden auffindbar wirst.</p>

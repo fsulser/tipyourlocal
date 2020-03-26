@@ -68,25 +68,23 @@
                 <a href="./impressum">Impressum</a>
             </li>
         </ul>
-
     </nav>
-
-
 
     <div class="overlay"></div>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-auto">
-                    <button class="btn btn_menu" id="sidebarCollapse">
-                        <i class="fa fa-bars"></i>
-                        Menu
-                    </button>
-                </div>
-            </div>
+    <nav class="navbar navbar-light bg-light">
+        <div class="navbar-nav ">
+            
+        <button class="btn btn_menu" id="sidebarCollapse">
+            <i class="fa fa-bars"></i>
+            Menu
+        </button></div>
+
+        <div class="navbar-nav col">
+            <a class="navbar-brand" href="./index">TIP YOUR LOCAL</a>
         </div>
     </nav>
+
 
     <!-- Page Content  -->
     <div class="container">
@@ -123,7 +121,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm">
-                        <img src="img/spende.png" class="small_image img-fluid">
+                        <img src="img/spende.jpg" class="small_image img-fluid">
                     </div>
                     <div class="col-sm">
                         Möchtest du dem ersteller der Webseite eine kleine Spende entrichten um die Kosten zu decken dann kannst du das gern hier tun:

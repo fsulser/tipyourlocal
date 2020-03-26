@@ -75,27 +75,23 @@ $_SESSION['LastRequest'] = $_SERVER['REQUEST_URI'].$_SERVER['QUERY_STRING'];
                 <a href="./impressum">Impressum</a>
             </li>
         </ul>
-
-
     </nav>
-
 
 
     <div class="overlay"></div>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-auto">
-                    <button class="btn btn_menu" id="sidebarCollapse">
-                        <i class="fa fa-bars"></i>
-                        Menu
-                    </button>
-                </div>
-            </div>
+    <nav class="navbar navbar-light bg-light">
+        <div class="navbar-nav ">
+            
+        <button class="btn btn_menu" id="sidebarCollapse">
+            <i class="fa fa-bars"></i>
+            Menu
+        </button></div>
+
+        <div class="navbar-nav col">
+            <a class="navbar-brand" href="./index">TIP YOUR LOCAL</a>
         </div>
     </nav>
-
 
     <!-- Page Content  -->
     <div class="container">

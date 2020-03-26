@@ -57,7 +57,7 @@ a:focus {
     left: -250px;
     height: 100vh;
     z-index: 999;
-    background: darkgray;
+    background: white;
     color: #fff;
     transition: all 0.3s;
     overflow-y: scroll;
@@ -85,7 +85,7 @@ a:focus {
 }
 
 #dismiss_header:hover {
-    background: white;
+    background: rgb(230, 230, 230);
     cursor: pointer;
 }
 
@@ -126,7 +126,7 @@ a:focus {
 
 #sidebar ul li a:hover {
     color: black;
-    background: #fff;
+    background: rgb(230, 230, 230);
 }
 
 #sidebar ul li.active>a,

@@ -2,6 +2,8 @@ $(document).ready(function() {
     var table = $('#example').DataTable( {
         "processing": true,
         "serverSide": true,
+        "info": false,
+        "lengthChange": false,
         "ajax": "./helper/company_search.php",
         "oLanguage": {
             "sSearch": ""
@@ -18,6 +20,10 @@ $(document).ready(function() {
                 "targets": [ 0 ],
                 "visible": false,
                 "searchable": false
+            },
+            { 
+                className: "text-left font-weight-bold", 
+                "targets": [ 1 ] 
             }
         ]
     } );

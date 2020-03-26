@@ -73,26 +73,23 @@
                     <a href="./impressum">Impressum</a>
                 </li>
             </ul>
-
-
         </nav>
-
-
 
         <div class="overlay"></div>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-auto">
-                        <button class="btn btn_menu" id="sidebarCollapse">
-                            <i class="fa fa-bars"></i>
-                            Menu
-                        </button>
-                    </div>
-                </div>
+        <nav class="navbar navbar-light bg-light">
+            <div class="navbar-nav ">
+                
+            <button class="btn btn_menu" id="sidebarCollapse">
+                <i class="fa fa-bars"></i>
+                Menu
+            </button></div>
+
+            <div class="navbar-nav col">
+                <a class="navbar-brand" href="./index">TIP YOUR LOCAL</a>
             </div>
         </nav>
+
 
         <!-- Page Content  -->
         <div class="container">
@@ -136,7 +133,7 @@
 
                     <div class="col-sm">
 
-                        <img src="img/menu/menu_header.png" class="img-fluid col-lg-7">
+                        <img src="img/menu/menu_header.jpg" class="img-fluid col-lg-7">
 
                         <div style="height: 20px"></div>
                         <div class="mb-4">
@@ -311,7 +308,7 @@
                     <div class="row">
                         <div style="height: 50px"></div>
                         <div class="col-sm">
-                            <img src="img/menu/small_beer.jpg" class="img-fluid col-lg-12">
+                            <img src="img/menu/vine_box.jpg" class="img-fluid col-lg-12">
                         </div>
                         <div class="col-sm">
                             <div style="height: 30px"></div>
