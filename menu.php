@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/menu.css">
 
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
@@ -129,7 +129,7 @@
 
                     <div class="col-sm">
 
-                        <img src="img/menu/menu_header.png" class="img-fluid">
+                        <img src="img/menu/menu_header.png" class="img-fluid col-lg-12">
 
                         <div style="height: 20px"></div>
                         <div class="mb-4">
@@ -141,180 +141,244 @@
                         </div>
                     </div>
 
-                    <div class="col-sm">
+                    <div class="row">
                         <div style="height: 50px"></div>
-
-                        <img src="img/menu/shot.jpg" class="img-fluid col-lg-6">
-
-                        <div style="height: 30px"></div>
-                        <h2>Shot</h2>
-                        <div style="height: 30px"></div>
-                        <h2>2€</h2>
-
-                        <div class="float-right">
-                            <button class="btn right order" data-value="2">Bestellen</button>
+                        <div class="col-sm">
+                            <img src="img/menu/shot.jpg" class="img-fluid col-lg-12">
                         </div>
-                        <div style="height: 50px"></div>
-                        <div class="mb-4">
-                            <hr class="solid">
-                        </div>
-                    </div>
-
-                    <div class="col-sm">
-                        <div style="height: 50px"></div>
-
-                        <img src="img/menu/small_beer.jpg" class="img-fluid col-lg-6">
-
-                        <div style="height: 30px"></div>
-                        <h2>Kleines Bier</h2>
-                        <div style="height: 30px"></div>
-                        <h2>3.5€</h2>
-
-                        <div class="float-right">
-                            <button class="btn right order" data-value="3.5">Bestellen</button>
-                        </div>
-                        <div style="height: 50px"></div>
-                        <div class="mb-4">
-                            <hr class="solid">
-                        </div>
-                    </div>
-
-                    <div class="col-sm">
-                        <div style="height: 50px"></div>
-
-                        <img src="img/menu/big_beer.jpg" class="img-fluid col-lg-6">
-
-                        <div style="height: 30px"></div>
-                        <h2>Grosses Bier</h2>
-                        <div style="height: 30px"></div>
-                        <h2>5€</h2>
-
-                        <div class="float-right">
-                            <button class="btn right order" data-value="5">Bestellen</button>
-                        </div>
-                        <div style="height: 50px"></div>
-                        <div class="mb-4">
-                            <hr class="solid">
-                        </div>
-                    </div>
-
-                    <div class="col-sm">
-                        <div style="height: 50px"></div>
-
-                        <img src="img/menu/vine_glass.jpg" class="img-fluid col-lg-6">
-
-                        <div style="height: 30px"></div>
-                        <h2>Glas Wein</h2>
-                        <div style="height: 30px"></div>
-                        <h2>5€</h2>
-
-                        <div class="float-right">
-                            <button class="btn right order" data-value="5">Bestellen</button>
-                        </div>
-                        <div style="height: 50px"></div>
-                        <div class="mb-4">
-                            <hr class="solid">
-                        </div>
-                    </div>
-
-                    <div class="col-sm">
-                        <div style="height: 50px"></div>
-
-                        <img src="img/menu/vine_bottle.jpg" class="img-fluid col-lg-6">
-
-                        <div style="height: 30px"></div>
-                        <h2>Flasche Wein</h2>
-                        <div style="height: 30px"></div>
-                        <h2>10€</h2>
-
-                        <div class="float-right">
-                            <button class="btn right order" data-value="10">Bestellen</button>
-                        </div>
-                        <div style="height: 50px"></div>
-                        <div class="mb-4">
-                            <hr class="solid">
-                        </div>
-                    </div>
-
-                    <div class="col-sm">
-                        <div style="height: 50px"></div>
-
-                        <img src="img/menu/cocktail.jpg" class="img-fluid col-lg-6">
-
-                        <div style="height: 30px"></div>
-                        <h2>Cocktail</h2>
-                        <div style="height: 30px"></div>
-                        <h2>20€</h2>
-
-                        <div class="float-right">
-                            <button class="btn right order" data-value="20">Bestellen</button>
-                        </div>
-                        <div style="height: 50px"></div>
-                        <div class="mb-4">
-                            <hr class="solid">
-                        </div>
-                    </div>
-
-                    <div class="col-sm">
-                        <div style="height: 50px"></div>
-
-                        <img src="img/menu/vine_box.jpg" class="img-fluid col-lg-6">
-
-                        <div style="height: 30px"></div>
-                        <h2>Kiste Wein</h2>
-                        <div style="height: 30px"></div>
-                        <h2>50€</h2>
-
-                        <div class="float-right">
-                            <button class="btn right order" data-value="50">Bestellen</button>
-                        </div>
-                        <div style="height: 50px"></div>
-                        <div class="mb-4">
-                            <hr class="solid">
-                        </div>
-                    </div>
-
-                    <div class="col-sm">
-                        <div style="height: 50px"></div>
-
-                        <img src="img/menu/vine_fass.jpg" class="img-fluid col-lg-6">
-
-                        <div style="height: 30px"></div>
-                        <h2>Fass Wein</h2>
-                        <div style="height: 30px"></div>
-                        <h2>100€</h2>
-
-                        <div class="float-right">
-                            <button class="btn right order" data-value="100">Bestellen</button>
-                        </div>
-                        <div style="height: 50px"></div>
-                        <div class="mb-4">
-                            <hr class="solid">
-                        </div>
-                    </div>
-
-                    <div class="col-sm">
-                        <div style="height: 50px"></div>
-
-                        <img src="img/menu/dagobert.jpg" class="img-fluid col-lg-6">
-
-                        <div style="height: 30px"></div>
-                        <h2>Freier Betrag</h2>
-                        <div style="height: 30px"></div>
-                        <div class="form-group">
-                            <label for="freevalue_field">Wert eintragen</label>
-                            <div class="input-group">
-                                <input type="number" id="freevalue_field" class="form-control" placeholder="Freier Betrag" value="200" min="0" step="1" data-number-to-fixed="2" data-number-stepfactor="100" style="text-align: right">
-                                <span class="input-group-text">€</span>
+                        <div class="col-sm">
+                            <div style="height: 30px"></div>
+                            <div class="container">
+                                <div class="row">
+                                    <h2 class="col menu_item">Shot</h2>
+                                    <h2 class="col price">2€</h2>
+                                </div>
+                            </div>
+                            <div style="height: 30px"></div>
+                            <div class="container">
+                                <div class="float-right">
+                                    <button class="btn right order" data-value="2">Bestellen</button>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                    <div style="height: 50px"></div>
+                    <div class="mb-4">
+                        <hr class="solid">
+                    </div>
 
-                        <div class="float-right">
-                            <button class="btn right order freetext">Bestellen</button>
-                        </div>
+                    <div class="row">
                         <div style="height: 50px"></div>
-                        <div class="mb-4">
-                            <hr class="solid">
+                        <div class="col-sm">
+                            <img src="img/menu/small_beer.jpg" class="img-fluid col-lg-12">
+                        </div>
+                        <div class="col-sm">
+                            <div style="height: 30px"></div>
+                            <div class="container">
+                                <div class="row">
+                                    <h2 class="col menu_item">Kleines Bier</h2>
+                                    <h2 class="col price">3.5€</h2>
+                                </div>
+                            </div>
+                            <div style="height: 30px"></div>
+                            <div class="container">
+                                <div class="float-right">
+                                    <button class="btn right order" data-value="3.5">Bestellen</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="height: 50px"></div>
+                    <div class="mb-4">
+                        <hr class="solid">
+                    </div>
+
+
+                    <div class="row">
+                        <div style="height: 50px"></div>
+                        <div class="col-sm">
+                            <img src="img/menu/big_beer.jpg" class="img-fluid col-lg-12">
+                        </div>
+                        <div class="col-sm">
+                            <div style="height: 30px"></div>
+                            <div class="container">
+                                <div class="row">
+                                    <h2 class="col menu_item">Grosses Bier</h2>
+                                    <h2 class="col price">5€</h2>
+                                </div>
+                            </div>
+                            <div style="height: 30px"></div>
+                            <div class="container">
+                                <div class="float-right">
+                                    <button class="btn right order" data-value="5">Bestellen</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="height: 50px"></div>
+                    <div class="mb-4">
+                        <hr class="solid">
+                    </div>
+
+                    <div class="row">
+                        <div style="height: 50px"></div>
+                        <div class="col-sm">
+                            <img src="img/menu/vine_glass.jpg" class="img-fluid col-lg-12">
+                        </div>
+                        <div class="col-sm">
+                            <div style="height: 30px"></div>
+                            <div class="container">
+                                <div class="row">
+                                    <h2 class="col menu_item">Glas Wein</h2>
+                                    <h2 class="col price">5€</h2>
+                                </div>
+                            </div>
+                            <div style="height: 30px"></div>
+                            <div class="container">
+                                <div class="float-right">
+                                    <button class="btn right order" data-value="5">Bestellen</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="height: 50px"></div>
+                    <div class="mb-4">
+                        <hr class="solid">
+                    </div>
+
+
+                    <div class="row">
+                        <div style="height: 50px"></div>
+                        <div class="col-sm">
+                            <img src="img/menu/vine_bottle.jpg" class="img-fluid col-lg-12">
+                        </div>
+                        <div class="col-sm">
+                            <div style="height: 30px"></div>
+                            <div class="container">
+                                <div class="row">
+                                    <h2 class="col menu_item">Flasche Wein</h2>
+                                    <h2 class="col price">10€</h2>
+                                </div>
+                            </div>
+                            <div style="height: 30px"></div>
+                            <div class="container">
+                                <div class="float-right">
+                                    <button class="btn right order" data-value="10">Bestellen</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="height: 50px"></div>
+                    <div class="mb-4">
+                        <hr class="solid">
+                    </div>
+
+
+                    <div class="row">
+                        <div style="height: 50px"></div>
+                        <div class="col-sm">
+                            <img src="img/menu/cocktail.jpg" class="img-fluid col-lg-12">
+                        </div>
+                        <div class="col-sm">
+                            <div style="height: 30px"></div>
+                            <div class="container">
+                                <div class="row">
+                                    <h2 class="col menu_item">Cocktail</h2>
+                                    <h2 class="col price">20€</h2>
+                                </div>
+                            </div>
+                            <div style="height: 30px"></div>
+                            <div class="container">
+                                <div class="float-right">
+                                    <button class="btn right order" data-value="20">Bestellen</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="height: 50px"></div>
+                    <div class="mb-4">
+                        <hr class="solid">
+                    </div>
+
+
+                    <div class="row">
+                        <div style="height: 50px"></div>
+                        <div class="col-sm">
+                            <img src="img/menu/small_beer.jpg" class="img-fluid col-lg-12">
+                        </div>
+                        <div class="col-sm">
+                            <div style="height: 30px"></div>
+                            <div class="container">
+                                <div class="row">
+                                    <h2 class="col menu_item">Kiste Wein</h2>
+                                    <h2 class="col price">50€</h2>
+                                </div>
+                            </div>
+                            <div style="height: 30px"></div>
+                            <div class="container">
+                                <div class="float-right">
+                                    <button class="btn right order" data-value="50">Bestellen</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="height: 50px"></div>
+                    <div class="mb-4">
+                        <hr class="solid">
+                    </div>
+
+
+                    <div class="row">
+                        <div style="height: 50px"></div>
+                        <div class="col-sm">
+                            <img src="img/menu/vine_fass.jpg" class="img-fluid col-lg-12">
+                        </div>
+                        <div class="col-sm">
+                            <div style="height: 30px"></div>
+                            <div class="container">
+                                <div class="row">
+                                    <h2 class="col menu_item">Fass Wein</h2>
+                                    <h2 class="col price">100€</h2>
+                                </div>
+                            </div>
+                            <div style="height: 30px"></div>
+                            <div class="container">
+                                <div class="float-right">
+                                    <button class="btn right order" data-value="100">Bestellen</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="height: 50px"></div>
+                    <div class="mb-4">
+                        <hr class="solid">
+                    </div>
+
+
+                    <div class="row">
+                        <div style="height: 50px"></div>
+                        <div class="col-sm">
+                            <img src="img/menu/dagobert.jpg" class="img-fluid col-lg-12">
+                        </div>
+                        <div class="col-sm">
+                            <div style="height: 30px"></div>
+                            <div class="container">
+                                <div class="row">
+                                    <h2 class="col menu_item">Freier Betrag</h2>
+                                    <div class="col form-group">
+                                        <div class="input-group">
+                                            <input type="number" id="freevalue_field" class="form-control" placeholder="Freier Betrag" value="200" min="0" step="1" data-number-to-fixed="2" data-number-stepfactor="100" style="text-align: right">
+                                            <span class="input-group-text">€</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="height: 30px"></div>
+                            <div class="container">
+                                <div class="float-right">
+                                    <button class="btn right order freetext">Bestellen</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
