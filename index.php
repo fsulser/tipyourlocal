@@ -96,8 +96,9 @@
                 <div style="height: 50px"></div>
 
                 <p>
-                    Durch die aktuellen Gegebenheiten des Coronaviruses können viele Bars, Restaurants und andere Geschäfte aktuell leider nicht Ihrer Tätigkeit nachgehen und stehen damit leider auch vor der Frage wie es wirtschaftlich weiter gehen soll.
-                    Damit diese Geschäfte und Lokal nach der Quarantänezeit auch wieder für uns geöffnet haben bietet diese Webseite die Möglichkeit Bars individuell zu unterstützen und Geld zu spenden.
+                    Durch die aktuellen Gegebenheiten des Coronaviruses können viele Bars, Restaurants und andere Geschäfte leider nicht Ihrer Tätigkeit nachgehen, und stehen damit leider auch vor der Frage wie es wirtschaftlich weiter gehen soll.
+                    Damit diese Geschäfte und Lokale nach der Quarantänezeit auch wieder für uns geöffnet haben, soll diese Webseite die Möglichkeit bieten diese Unternehmen individuell zu unterstützen und Geld zu spenden.
+                    Dabei wird die Gesamtheit des getippten Geldes (abzüglich der Paypal Gebühr) direkt an das entsprechende Lokal per Paypal überwiesen.
                 </p>
                 <div style="height: 30px"></div>
 
@@ -117,7 +118,7 @@
                         <img src="img/main_menucard.png" class="small_image img-fluid">
                         <div style="height: 20px"></div>
                         <h2>Menükarte</h2>
-                        <p>Du willst einem Lokal etwas gutes tun? Hier kannst Du direkt die gewünschte Summe auswählen und an das Lokal spenden.</p>
+                        <p>Du willst einem Lokal etwas gutes tun? Hier kannst Du direkt dein Lokal auswählen und die gewünschte Summe an das Lokal spenden.</p>
                         <div style="height: 30px"></div>
                         <a href="./company_selector" class="btn btn-info" role="button">ZUM TIPPEN</a>
                         <div style="height: 100px"></div>
@@ -126,7 +127,7 @@
                         <img src="img/main_companies.png" class="small_image img-fluid">
                         <div style="height: 20px"></div>
                         <h2>Lokal</h2>
-                        <p>Du besitzt ein Lokal und möchten Spenden erhalten? Registriere Dich hier, damit Du für deine Kunden auffindbar wirst.</p>
+                        <p>Du besitzt ein Lokal und möchtest Spenden erhalten? Registriere Dich hier, damit Du für deine Kunden auffindbar wirst.</p>
                         <div style="height: 30px"></div>
                         <a href="./register" class="btn btn-info" role="button">REGISTRIEREN</a>
                         <div style="height: 100px"></div>
