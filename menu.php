@@ -45,13 +45,13 @@
     <div class="wrapper">
         <!-- Sidebar  -->
         <nav id="sidebar">
-            <div id="dismiss">
-                <i class="fas fa-arrow-left"></i>
+            <div class="sidebar-header"  id="dismiss_header">
+                <h3>Menü</h3>
+                <div id="dismiss">
+                    <i class="fas fa-arrow-left"></i>
+                </div>
             </div>
 
-            <div class="sidebar-header">
-                <h3>Menü</h3>
-            </div>
 
             <ul class="list-unstyled components">
                 <li>
@@ -81,9 +81,16 @@
 
         <div class="overlay"></div>
 
-        <nav class="navbar navbar-default navbar-fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <button class="btn btn_menu" id="sidebarCollapse"><i class="fa fa-bars"></i> Menu</button>
+                <div class="row">
+                    <div class="col-md-auto">
+                        <button class="btn btn_menu" id="sidebarCollapse">
+                            <i class="fa fa-bars"></i>
+                            Menu
+                        </button>
+                    </div>
+                </div>
             </div>
         </nav>
 
@@ -129,7 +136,7 @@
 
                     <div class="col-sm">
 
-                        <img src="img/menu/menu_header.png" class="img-fluid col-lg-12">
+                        <img src="img/menu/menu_header.png" class="img-fluid col-lg-7">
 
                         <div style="height: 20px"></div>
                         <div class="mb-4">
@@ -380,6 +387,10 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div style="height: 50px"></div>
+                    <div class="mb-4">
+                        <hr class="solid">
                     </div>
 
                     <div style="height: 100px"></div>

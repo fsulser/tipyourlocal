@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    $('#dismiss, .overlay').on('click', function () {
+    $('#dismiss_header, .overlay').on('click', function () {
         $('#sidebar').removeClass('active');
         $('.overlay').removeClass('active');
     });

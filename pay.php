@@ -47,13 +47,13 @@
 <div class="wrapper">
     <!-- Sidebar  -->
     <nav id="sidebar">
-        <div id="dismiss">
-            <i class="fas fa-arrow-left"></i>
+        <div class="sidebar-header"  id="dismiss_header">
+            <h3>Menü</h3>
+            <div id="dismiss">
+                <i class="fas fa-arrow-left"></i>
+            </div>
         </div>
 
-        <div class="sidebar-header">
-            <h3>Menü</h3>
-        </div>
 
         <ul class="list-unstyled components">
             <li>
@@ -83,9 +83,17 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <button class="btn btn_menu" id="sidebarCollapse"><i class="fa fa-bars"></i> Menu</button>
+            <div class="row">
+                <div class="col-md-auto">
+                    <button class="btn btn_menu" id="sidebarCollapse">
+                        <i class="fa fa-bars"></i>
+                        Menu
+                    </button>
+                </div>
+            </div>
         </div>
     </nav>
+
 
     <!-- Page Content  -->
     <div class="container">
