@@ -1,41 +1,14 @@
 $(document).ready(function() {
-    var table = $('#example').DataTable( {
-        "processing": true,
-        "serverSide": true,
-        "info": false,
-        "lengthChange": false,
-        "ajax": "./helper/company_search.php",
-        "oLanguage": {
-            "sSearch": ""
-        },
-        "columns": [
-            { "data": "id" },
-            { "data": "company_name" },
-            { "data": "address" },
-            { "data": "PLZ" },
-            { "data": "town" },
-        ],
-        "columnDefs": [
-            {
-                "targets": [ 0 ],
-                "visible": false,
-                "searchable": false
-            },
-            { 
-                className: "text-left font-weight-bold", 
-                "targets": [ 1 ] 
-            }
-        ]
-    } );
-    $('.dataTables_filter input').parent().wrap("<form class='form-inline'></form>" );
-    $('.dataTables_filter input').addClass('form-control form-control-sm ml-6');
-    $('.dataTables_filter input').attr('placeholder', 'Suche');
-    $('.dataTables_filter input').before('<i class="fas fa-search" aria-hidden="true"></i>');
-    $('.dataTables_filter').addClass('pull-left');
+    var options = {
+        valueNames: [ 'name', 'address', 'town']
+    };
+    
+    var userList = new List('users', options);
 
-    $('#example tbody').on( 'click', 'tr', function () {
-        data = table.row( this ).data();
-        location.href = "./menu?id="+data.id;
-    } );
-
+    $("#company_search").on("keyup", function() {
+        var value = this.value.toLowerCase().trim();
+        $(".list a").show().filter(function() {
+          return $(this).children()[0].children[1].innerText.toLowerCase().trim().indexOf(value) == -1;
+        }).hide();
+      });
 } );

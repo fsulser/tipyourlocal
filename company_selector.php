@@ -11,17 +11,14 @@
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/brands.min.css"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"></script>
-    <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css">
-
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/register.css">
 
     <!-- Font Awesome JS -->
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/brands.min.js"></script>
@@ -35,8 +32,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
     <!-- jQuery Custom Scroller CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
 
     
 
@@ -58,6 +56,21 @@
         table.table-bordered.dataTable tbody th, table.table-bordered.dataTable tbody td {
             word-break: break-all;
         }
+
+        .photo {
+            border-radius: 45px;
+        }
+
+        .list-group-item{
+            margin: 10px 0;
+        }
+
+        .name {
+            font-weight: 700;
+        }
+
+
+
     </style>
 
 
@@ -118,27 +131,58 @@
 
     <!-- Page Content  -->
     <div class="container">
+    
 
         <div class="col-md-12">
+
             <h1>
                 Wähle dein zu unterstützendes Unternehmen:
             </h1>
-            <div style="height: 30px"></div>
+            <div style="height: 50px"></div>
+    
+            <input class="search form-control col-md-3" placeholder="Search" id="company_search" />       
 
-            <table id="example" class="table table-hover table-bordered" style="width:100%">
-                <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>Addresse</th>
-                    <th>PLZ</th>
-                    <th>Ort</th>
-                </tr>
-                </thead>
-            </table>
+            <div class="list-group list">
+                <?php
+                    include './helper/db_connect.php';
+                    $conn = OpenCon();
 
-            <div style="height: 100px"></div>
+                    if($stmt = $conn->prepare("SELECT id, company_name, address, PLZ, town, email, image_url FROM restaurants WHERE activated = 1 AND public = 1")){
+                        $stmt->execute();
+                        $stmt->bind_result($id, $company_name, $address, $PLZ, $town, $email, $image_url);
+
+                        while ($stmt->fetch()) { // For each row
+                            if(!$image_url){
+                                $image_url = './img/default_bar_image.jpg';
+                            }
+
+                            echo '
+                                    <a href="./menu?id=' . $id . '" class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-sm-2">
+                                            <div style="height: 15px"></div>
+                                            <img src="' . $image_url . '" class="fluid col">
+                                            <div style="height: 15px"></div>
+                                        </div>
+                                        <div class="col-sm">
+                                            <div style="height: 15px"></div>
+                                            <div class="col text-left mt-2">
+                                                <h4 class="list-group-item-heading text-left name">' . $company_name . '</h4>
+                                                <p class="list-group-item-text text-left address">' . $address . '</p>
+                                                <p class="list-group-item-text text-left town">' . $PLZ . ' ' . $town . '</p>
+                                            </div>
+                                            <div style="height: 15px"></div>
+                                        </div>
+                                    </div>
+                                    </a>
+                                ';
+                        }
+                    };
+                ?>
+            </div>
         </div>
+
+        <div style="height: 100px"></div>
     </div>
     <footer class="page-footer font-small blue">
         <a class="btn btn_sm" id="sidebarCollapse" href="https://www.facebook.com/tipyourlocal">
