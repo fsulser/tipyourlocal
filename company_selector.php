@@ -61,15 +61,13 @@
             border-radius: 45px;
         }
 
-        .list-group-item{
-            margin: 10px 0;
-        }
-
         .name {
             font-weight: 700;
         }
 
-
+        .img-fluid{
+            max-width: 150px
+        }
 
     </style>
 
@@ -140,7 +138,8 @@
             </h1>
             <div style="height: 50px"></div>
     
-            <input class="search form-control col-md-3" placeholder="Search" id="company_search" />       
+            <input class="search form-control col-md-3" placeholder="Suchen" id="company_search" />       
+            <div style="height: 30px"></div>
 
             <div class="list-group list">
                 <?php
@@ -159,17 +158,16 @@
                             echo '
                                     <a href="./menu?id=' . $id . '" class="list-group-item">
                                     <div class="row">
-                                        <div class="col-sm-2">
+                                        <div class="col-xs col-md-2">
                                             <div style="height: 15px"></div>
-                                            <img src="' . $image_url . '" class="fluid col">
+                                            <img src="' . $image_url . '" class="img-fluid">
                                             <div style="height: 15px"></div>
                                         </div>
-                                        <div class="col-sm">
+                                        <div class="col-xs col-md-10">
                                             <div style="height: 15px"></div>
                                             <div class="col text-left mt-2">
-                                                <h4 class="list-group-item-heading text-left name">' . $company_name . '</h4>
-                                                <p class="list-group-item-text text-left address">' . $address . '</p>
-                                                <p class="list-group-item-text text-left town">' . $PLZ . ' ' . $town . '</p>
+                                                <h4 class="list-group-item-heading text-left">' . $company_name . '</h4>
+                                                <p class="list-group-item-text text-left">' . $address . '</br>' . $PLZ . ' ' . $town . '</p>
                                             </div>
                                             <div style="height: 15px"></div>
                                         </div>

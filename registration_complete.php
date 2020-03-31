@@ -126,7 +126,7 @@
         $paypal_input = $_POST['paypal_input'];
         $phone_input = $_POST['phone_input'];
 
-        $query = 'INSERT INTO restaurants (company_name, private_name, address, PLZ, town, email, paypal_mail, phone_number) values (?, ?, ?, ?, ?, ?, ?, ?)';
+        $query = 'INSERT INTO restaurants (company_name, private_name, address, PLZ, town, email, paypal_mail, phone_number, image_url) values (?, ?, ?, ?, ?, ?, ?, ?, "")';
         if ($stmt = $conn->prepare($query)) {
             try {
                 $stmt->bind_param("ssssssss", strval($company_name_input), strval($name_input),
